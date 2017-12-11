@@ -194,6 +194,8 @@ composer() {
 }
 export -f composer
 
+status "hello world"
+
 status "Installing dependencies..."
 
 # check if we should use a composer.phar version bundled with the project
