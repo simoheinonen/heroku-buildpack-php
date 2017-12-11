@@ -194,9 +194,10 @@ composer() {
 }
 export -f composer
 
-status "hello world"
-
+# @todo do this somehow properly
+status "Installing Swoole"
 pecl install swoole
+echo "extension=swoole.so" >>/app/.heroku/php/etc/php/php.ini
 
 status "Installing dependencies..."
 
